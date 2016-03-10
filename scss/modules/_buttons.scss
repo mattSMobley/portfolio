@@ -1,0 +1,36 @@
+.primary-btn{
+	color: #f7931d;
+	font-size: 18px;
+	padding: 10px 15px;
+	border: 1px solid #fff;
+	margin-top: 10px;
+	display: inline-block;
+	@include transition(0.5s);
+
+	&:hover,
+	&:focus{
+		background-color: #FFF;
+		text-decoration: none;
+		color: $primary-color;		
+	}
+
+	span{
+		margin-left: 5px
+	}
+}
+.send-btn{	
+	background-color: transparent;
+	color: #333;
+	font-size: 16px;
+	padding: 5px 20px;
+	border: 1px solid #333;
+	margin-top: 5px;
+	display: inline-block;
+	@include transition(0.5s);	
+
+	&:hover{
+		background-color: #333;
+		text-decoration: none;
+		color: #fff;  		
+	}
+}
