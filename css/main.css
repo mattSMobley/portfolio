@@ -394,10 +394,10 @@ img {
 .hero > div {
   background-image:
     linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
     ),
-    url('../img/029.jpg');
+    url('/img/029.jpg');
     background-size: cover;
 }
 .move-items .hero > div {
