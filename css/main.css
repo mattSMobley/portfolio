@@ -387,15 +387,15 @@ img {
   left: 0;
   overflow: hidden;
   pointer-events: none;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 
 .hero > div {
   background-image:
     linear-gradient(
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.4)
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
     ),
     url('../img/background.jpg');
     /*url('http://i.imgur.com/RfxlUwQ.jpg');*/
