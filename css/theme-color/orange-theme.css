@@ -1,0 +1,58 @@
+/*=======================================
+Template Design By MarkUps.
+Author URI : http://www.markups.io/
+========================================*/
+h2 {
+  color: #ff871c;
+}
+.primary-btn { 
+  color: #ff871c; 
+}
+.primary-btn:hover, .primary-btn:focus {
+  color: #ff871c;
+}
+.send-btn:hover {
+  background-color: #ff871c;
+}
+
+#menu-popup .nav-menu ul li a:hover {
+  color: #ff871c;
+}
+.move-items .stack-title a:hover, .move-items .stack-title a:focus {
+  color: #ff871c;
+}
+.explore-btn-area .explore-btn {
+  color: #ff871c;
+  border-top: 3px solid #ff871c;
+}
+.move-items .is-selected .stack-title::before {  
+  color: #ff871c;  
+}
+.stack-title a {
+  color: #ff871c;  
+}
+.is-selected .stack-title a span {
+  color: #ff871c;
+}
+.tos-pagination.tos-bullets a.tos-selected {
+  background-color: #ff871c;
+}
+.about-area a {
+  color: #ff871c;
+}
+.about-area a:hover {
+  color: #ff871c;
+  border-bottom: 1px solid #ff871c;
+}
+.contact-area .contact-form form .form-control:focus {
+  border-color: #ff871c;  
+}
+.send-btn {
+  color: #ff871c;  
+}
+
+
+/*=======================================
+Template Design By MarkUps.
+Author URI : http://www.markups.io/
+========================================*/
