@@ -798,11 +798,19 @@ img {
   transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
 }
 
-#itemTitle {
-
+#itemTitleLife {
+  margin-left: 1em;
   text-align: center;
 }
 
+#itemTitleTravel {
+  text-align: center;
+}
+
+#itemTitleChatty {
+  margin-left: 2em;
+  text-align: center;
+}
 
 .stack-slider2 .is-selected {
   width: 70%;
