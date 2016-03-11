@@ -421,7 +421,7 @@ img {
   position: absolute;
   top: 0;
   left: 50%;
-  margin: 0 0 0 -391px;
+  margin: 10px 0 0 -400px;
   width: 782px;
   height: 782px;
   border-radius: 50%;
@@ -748,6 +748,10 @@ img {
   backface-visibility: hidden;
 }
 
+#projectTitle {
+  font-size: 2em;
+}
+
 
 
 
@@ -792,6 +796,11 @@ img {
   transition: transform 0.5s, opacity 0.5s;
   -webkit-transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
   transition-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+}
+
+#itemTitle {
+
+  text-align: center;
 }
 
 
@@ -856,7 +865,7 @@ img {
 .item__content {
   position: relative;
   z-index: 100;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -906,7 +915,7 @@ img {
 
 .item__title {
   display: inline-block;
-  font-size: 20px;
+  font-size: 2em;
   margin: 0;
   padding: 0.75em 0;
   color: #888;
