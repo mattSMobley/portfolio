@@ -799,17 +799,21 @@ img {
 }
 
 #itemTitleLife {
-  margin-left: 1em;
+  margin-left: 6em;
   text-align: center;
+  font-size: 1.25em;
 }
 
 #itemTitleTravel {
+  margin-left: 4em;
   text-align: center;
+  font-size: 1.25em;
 }
 
 #itemTitleChatty {
-  margin-left: 2em;
+  margin-left: 7.5em;
   text-align: center;
+  font-size: 1.25em;
 }
 
 .stack-slider2 .is-selected {
