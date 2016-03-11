@@ -1,28 +1,5 @@
-
-/*
-Template Name: Snap Studio
-Author: MarkUps
-Author URI: http://www.markups.io/
-Description: Snap Studio - Photography Portfolio HTML5 Template.
-Version: 1.0
-Tags: light, white, multipurpose, multi page, custom-colors, Bootstrap,responsive, html5, css3,Sass
-*/
-
-
-/* Table of Content
-==================================================
-#BASIC TYPOGRAPHY
-#HEADER
-#MENU
-#HOME PAGE
-#PORTFOLIO PAGE
-#ABOUT PAGE
-#CONTACT PAGE
-
-*/
-
 @import url("https://fonts.googleapis.com/css?family=Merriweather");
-@import url("https://fonts.googleapis.com/css?family=Vollkorn");
+@import url("https://fonts.googleapis.com/css?family=Playfair Display");
 
 
 
@@ -35,7 +12,7 @@ html, body {
 
 body {
   background-color: #ffffff;
-  font-family: "Merriweather", serif;
+  font-family: "Playfair Display", serif;
   color: #999999;
   font-size: 15px;
   overflow-x: hidden;
@@ -98,16 +75,17 @@ a:focus {
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Vollkorn", serif;
+  font-family: "Playfair Display", sans-serif;
 }
 
 
 h2 {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 40px;
   margin: 0;
   padding-bottom: 10px;
+  font-family: "Playfair Display"
 }
 
 
@@ -193,7 +171,7 @@ img {
 #header .logo {
   color: #ccc;
   float: left;
-  font-family: "Vollkorn", serif;
+  font-family: "Playfair Display", serif;
   font-size: 25px;
   font-weight: bold;
 }
@@ -256,7 +234,7 @@ img {
   display: block;
   text-decoration: none;
   font-size: 30px;
-  font-family: "Vollkorn", serif;
+  font-family: "Playfair Display", serif;
   padding: 10px;
   color: #fff;
   -webkit-transition: all 0.5s;
@@ -387,6 +365,7 @@ img {
   left: 0;
   overflow: hidden;
   pointer-events: none;
+  /*BACKGROUND FOR THE PORTFOLIO POP-UPS*/
   background-color: rgba(255, 255, 255, 0);
 }
 
@@ -425,7 +404,7 @@ img {
 
 
 .hero__back--mover {
-  opacity: 0.7;
+  opacity: .9;
   -webkit-transition: -webkit-transform 0.4s, opacity 0s 0.5s;
   transition: transform 0.4s, opacity 0s 0.5s;
 }
@@ -937,7 +916,7 @@ img {
 .item__date {
   color: #999;
   display: inline-block;
-  font-family: "Vollkorn", serif;
+  font-family: "Playfair Display", serif;
   font-size: 14px;
   margin-left: 5px;
   vertical-align: middle;

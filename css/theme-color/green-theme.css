@@ -1,12 +1,9 @@
-/*=======================================
-Template Design By MarkUps.
-Author URI : http://www.markups.io/
-========================================*/
+
 h2 {
   color: #3fc35f;
 }
-.primary-btn { 
-  color: #3fc35f; 
+.primary-btn {
+  color: #3fc35f;
 }
 .primary-btn:hover, .primary-btn:focus {
   color: #3fc35f;
@@ -25,11 +22,11 @@ h2 {
   color: #3fc35f;
   border-top: 3px solid #3fc35f;
 }
-.move-items .is-selected .stack-title::before {  
-  color: #3fc35f;  
+.move-items .is-selected .stack-title::before {
+  color: #3fc35f;
 }
 .stack-title a {
-  color: #3fc35f;  
+  color: #3fc35f;
 }
 .is-selected .stack-title a span {
   color: #3fc35f;
@@ -45,14 +42,8 @@ h2 {
   border-bottom: 1px solid #3fc35f;
 }
 .contact-area .contact-form form .form-control:focus {
-  border-color: #3fc35f;  
+  border-color: #3fc35f;
 }
 .send-btn {
-  color: #3fc35f;  
+  color: #3fc35f;
 }
-
-
-/*=======================================
-Template Design By MarkUps.
-Author URI : http://www.markups.io/
-========================================*/
