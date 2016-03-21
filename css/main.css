@@ -504,8 +504,8 @@ img {
 
 .explore-btn-area {
   position: absolute;
-  left: 0;
   bottom: 5%;
+  left: 1%;
   width: 100%;
   text-align: center;
 }
@@ -799,19 +799,16 @@ img {
 }
 
 #itemTitleLife {
-  margin-left: 6em;
   text-align: center;
   font-size: 1.25em;
 }
 
 #itemTitleTravel {
-  margin-left: 4em;
   text-align: center;
   font-size: 1.25em;
 }
 
 #itemTitleChatty {
-  margin-left: 7.5em;
   text-align: center;
   font-size: 1.25em;
 }
@@ -879,6 +876,7 @@ img {
   z-index: 100;
   max-width: 1000px;
   margin: 0 auto;
+  text-align: center;
 }
 
 
