@@ -9,6 +9,18 @@ html, body {
 
 }
 
+#mobileContact {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  #mobileContact {
+    display: block;
+  }
+  #menu-popup #desktopContact{
+    display: none;
+  }
+}
 
 body {
   background-color: #ffffff;
