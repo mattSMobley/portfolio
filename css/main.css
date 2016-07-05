@@ -6,7 +6,7 @@
 /* BASE - Base tyles, Variables, Mixins, etc. */
 
 html, body {
-
+  background-attachment: fixed;
 }
 
 #mobileContact {
@@ -378,7 +378,15 @@ img {
   overflow: hidden;
   pointer-events: none;
   /*BACKGROUND FOR THE PORTFOLIO POP-UPS*/
-  background-color: rgba(255, 255, 255, 0);
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url('../img/5.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 
 
@@ -431,12 +439,12 @@ img {
 
 .hero__front {
   position: absolute;
-  top: 0;
+  /*top: 0;
   left: 50%;
   margin: 10px 0 0 -400px;
   width: 782px;
-  height: 782px;
-  border-radius: 50%;
+  height: 782px;*/
+  /*border-radius: 50%;*/
   opacity: 0;
 }
 
