@@ -178,7 +178,7 @@ header {
   outline: none;
 }
 
-/* PROJECTS BUTTON */
+/* -------------------- PROJECTS BUTTON -----------------------------------*/
 
 .explore-btn-area {
   position: absolute;
@@ -221,7 +221,7 @@ header {
   font-size: 50px;
 }
 
-/* THEME COLOR */
+/* ----------------------  THEME COLOR -----------------------------------*/
 
 h2 {
   color: #37c6f5;
@@ -266,7 +266,7 @@ h2 {
   padding-bottom: 3px;
 }
 
-/*===animation===*/
+/*----------- ANIMATIONS ------------------------------------------------------*/
 
 .animated {
   -webkit-animation-duration: 1.5s;
@@ -293,7 +293,7 @@ h2 {
   animation-name: fadeInDown;
 }
 
-/*======= ABOUT PAGE ========*/
+/*---------- ABOUT PAGE --------------------------------------------------*/
 
 .about-area {
   background-color: #fff;
@@ -328,7 +328,7 @@ h2 {
   margin-bottom: 5px;
 }
 
-/*======= CONTACT PAGE ========*/
+/*--- CONTACT PAGE ------------------------------------------------------*/
 
 .contact-area {
   background-color: #fff;
