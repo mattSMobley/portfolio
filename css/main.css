@@ -15,6 +15,7 @@ body {
   height: 100vh;
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/background.jpg');
   background-size: cover;
+  overflow: hidden;
   /*background-attachment: fixed;*/
 }
 #second {
@@ -22,6 +23,8 @@ body {
   height: 100vh;
   background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../img/imgTouchups/5.jpg');
   background-size: cover;
+  overflow: hidden;
+
   /*background-attachment: fixed;*/
 }
 #third {
@@ -29,6 +32,8 @@ body {
   height: 100vh;
   background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../img/imgTouchups/4.jpg');
   background-size: cover;
+  overflow: hidden;
+
   /*background-attachment: fixed;*/
 }
 #fourth {
@@ -36,6 +41,8 @@ body {
   height: 100vh;
   background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../img/imgTouchups/3.jpg');
   background-size: cover;
+  overflow: hidden;
+
   /*background-attachment: fixed;*/
 }
 #fifth {
@@ -43,6 +50,8 @@ body {
   height: 100vh;
   background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../img/imgTouchups/2.jpg');
   background-size: cover;
+  overflow: hidden;
+
   /*background-attachment: fixed;*/
 }
 .regularBack {
@@ -51,11 +60,12 @@ body {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/background.jpg');
   background-size: cover;
   font-size: 1.4em;
+  overflow-x: hidden;
   overflow-y: scroll;
 }
 video {
   width: 75%;
-  height: 80vh;
+  height: 75vh;
   /*float: right;
   padding-right: 1%;*/
 }
@@ -396,8 +406,16 @@ h2 {
   height: 150px;
   color: #000;
 }
-
-@media (max-width: 600px) {
+@media (min-width: 400px; max-width: 500px) {
+  #header #nav-icon {
+    color: #000;
+    float: right;
+    font-size: 30px;
+    padding-right: 5%;
+    padding-top: 4%;
+  }
+}
+@media (min-width: 500px; max-width: 600px) {
   video {
     width: 75%;
     height: 50vh;
@@ -409,6 +427,23 @@ h2 {
     padding-top: 5%;
     padding-left: 1%;
     padding-right: 1%;
+  }
+  #header #nav-icon {
+    color: #000;
+    float: right;
+    font-size: 30px;
+    padding-right: 5%;
+    padding-top: 4%;
+  }
+}
+
+@media (min-width: 600px; max-width: 700px) {
+  #header #nav-icon {
+    color: #000;
+    float: right;
+    font-size: 30px;
+    padding-right: 5%;
+    padding-top: 2%;
   }
 }
 
@@ -428,10 +463,10 @@ h2 {
   }
 }
 
-@media (min-width: 800px; max-width: 1000px) {
+@media (max-width: 1000px) {
   video {
-    width: 75%;
-    height: 70vh;
+    width: 70%;
+    height: 65vh;
   }
   .caption {
     color: black;
