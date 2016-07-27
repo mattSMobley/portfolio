@@ -1,25 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
-body {
-  font-family: "Playfair Display", serif;
-}
-.caption {
-  color: black;
-  font-size: 1.5em;
-  font-weight: 700;
-  padding-left: 1%;
-  padding-right: 1%;
-}
-.caption a:hover {
-  color: #37c6f5;
-}
-.subCaption {
-  padding-bottom: 1%;
-  padding-top: 1%;
-}
-.short {
-  padding-top: 2%;
-}
+/******************************* PAGE SECTIONS ************************************/
 .videoPadding {
   padding: 0em 12em;
 }
@@ -67,10 +48,6 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
 }
-video {
-  width: 50%;
-  height: auto;
-}
 header {
   padding-top: 1%;
   padding-bottom: 2%;
@@ -99,6 +76,96 @@ header {
   text-decoration: none;
   outline: none;
 }
+
+/*********************************** FONTS ***************************************/
+body {
+  font-family: "Playfair Display", serif;
+}
+.caption {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 700;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.caption a:hover {
+  color: #37c6f5;
+}
+.subCaption {
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+.short {
+  padding-top: 2%;
+}
+h2 {
+  color: #37c6f5;
+}
+#main-content {
+  float: left;
+  display: inline;
+  width: 100%;
+}
+#main-content .main-content-area {
+  float: left;
+  margin-top: 15%;
+  display: inline;
+  width: 100%;
+  text-align: center;
+}
+#main-content .main-content-area .slogan {
+  border-bottom: 2px solid #fff;
+  border-top: 2px solid #fff;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+#main-content .main-content-area h2 {
+  font-size: 50px;
+  margin-top: 5px;
+  line-height: 70px;
+}
+#main-content .main-content-area p {
+  color: #f8f8f8;
+}
+#main-content .main-content-area span {
+  display: inline-block;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 3px;
+}
+
+/********************************* ANIMATIONS ************************************/
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+
+/******************************* MENU POPUP ************************************/
 #menu-popup {
   display: none;
   background-color: rgba(0, 0, 0, 0.95);
@@ -190,9 +257,11 @@ header {
   text-decoration: none;
   outline: none;
 }
+#menu-popup .nav-menu ul li a:hover {
+  color: #37c6f5;
+}
 
-/* -------------------- PROJECTS BUTTON -----------------------------------*/
-
+/****************************** PROJECTS BUTTON **********************************/
 .explore-btn-area {
   position: absolute;
   bottom: 5%;
@@ -203,7 +272,6 @@ header {
 .explore-btn-area .explore-btn {
   display: inline-block;
   font-size: 20px;
-  /*font-weight: bold;*/
   text-transform: uppercase;
   text-align: center;
   opacity: 0.6;
@@ -234,80 +302,7 @@ header {
   font-size: 50px;
 }
 
-/* ----------------------  THEME COLOR -----------------------------------*/
-
-h2 {
-  color: #37c6f5;
-}
-#menu-popup .nav-menu ul li a:hover {
-  color: #37c6f5;
-}
-#main-content {
-  float: left;
-  display: inline;
-  width: 100%;
-}
-#main-content .main-content-area {
-  float: left;
-  margin-top: 15%;
-  display: inline;
-  width: 100%;
-  text-align: center;
-}
-#main-content .main-content-area .slogan {
-  border-bottom: 2px solid #fff;
-  border-top: 2px solid #fff;
-  color: #fff;
-  display: inline-block;
-  padding: 5px 0;
-  position: relative;
-  text-transform: uppercase;
-  font-size: 30px;
-}
-#main-content .main-content-area h2 {
-  font-size: 50px;
-  margin-top: 5px;
-  line-height: 70px;
-}
-#main-content .main-content-area p {
-  color: #f8f8f8;
-}
-#main-content .main-content-area span {
-  display: inline-block;
-  color: #fff;
-  border-bottom: 2px solid #fff;
-  padding-bottom: 3px;
-}
-
-/*----------- ANIMATIONS ------------------------------------------------------*/
-
-.animated {
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
-}
-
-/*---------- ABOUT PAGE --------------------------------------------------*/
-
+/********************************** ABOUT PAGE ***********************************/
 .about-area {
   background-color: #fff;
   display: inline;
@@ -341,8 +336,7 @@ h2 {
   margin-bottom: 5px;
 }
 
-/*--- CONTACT PAGE ------------------------------------------------------*/
-
+/********************************* CONTACT PAGE **********************************/
 .contact-area {
   background-color: #fff;
   display: inline;
@@ -409,6 +403,8 @@ h2 {
   height: 150px;
   color: #000;
 }
+
+/******************************* MEDIA QUERIES ************************************/
 @media (min-width: 400px; max-width: 500px) {
   #header #nav-icon {
     color: #000;
