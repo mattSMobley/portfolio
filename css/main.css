@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+
 /******************************* PAGE SECTIONS ************************************/
+
 .videoPadding {
   padding: 0em 12em;
 }
@@ -42,11 +44,44 @@
 .regularBack {
   width: 100%;
   height: 100vh;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/background.jpg');
+  background-size: cover;
+  font-size: 1.4em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.regularBackLight {
+  width: 100%;
+  height: 100vh;
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/background.jpg');
   background-size: cover;
   font-size: 1.4em;
   overflow-x: hidden;
   overflow-y: scroll;
+}
+
+/*.regularBack:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background: rgba(0,0,0,.7);
+    -moz-transition: all 2s;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.regularBack:hover:after {
+    opacity: 1;
+}*/
+
+.regularBack p, ul {
+  color: #DDD;
+  z-index: 1;
+  position: relative;
 }
 header {
   padding-top: 1%;
@@ -78,6 +113,7 @@ header {
 }
 
 /*********************************** FONTS ***************************************/
+
 body {
   font-family: "Playfair Display", serif;
 }
@@ -139,6 +175,7 @@ h2 {
 }
 
 /********************************* ANIMATIONS ************************************/
+
 .animated {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -148,9 +185,9 @@ h2 {
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
-    transform: translateY(-20px);
+    -webkit-transform: translateY(-2em);
+    -ms-transform: translateY(-2em);
+    transform: translateY(-2em);
   }
   100% {
     opacity: 1;
@@ -165,13 +202,91 @@ h2 {
 }
 
 
+.animated2 {
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@keyframes fadeInDown2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-4em);
+    -ms-transform: translateY(-4em);
+    transform: translateY(-4em);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.fadeInDown2 {
+  -webkit-animation-name: fadeInDown2;
+  animation-name: fadeInDown2;
+}
+
+/* ******** FADE INS ******** */
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.fade-in.one {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.fade-in.two {
+  -webkit-animation-delay: 1.0s;
+  -moz-animation-delay: 1.0s;
+  animation-delay: 1.0s;
+}
+
 /******************************* MENU POPUP ************************************/
+
 #menu-popup {
   display: none;
   background-color: rgba(0, 0, 0, 0.95);
   height: 100%;
   left: 0;
-  padding: 12% 10%;
+  padding: 10% 10%;
   position: fixed;
   text-align: center;
   top: 0;
@@ -262,6 +377,7 @@ h2 {
 }
 
 /****************************** PROJECTS BUTTON **********************************/
+
 .explore-btn-area {
   position: absolute;
   bottom: 5%;
@@ -303,40 +419,30 @@ h2 {
 }
 
 /********************************** ABOUT PAGE ***********************************/
-.about-area {
-  background-color: #fff;
-  display: inline;
-  float: left;
-  height: 550px;
-  margin-top: 20px;
-  overflow-y: auto;
-  padding: 25px 50px;
-  width: 100%;
-  opacity: .9;
-}
-.about-area h3 {
-  color: #333;
-  border-bottom: 2px solid #ccc;
-  display: inline-block;
-  padding-bottom: 5px;
-  font-size: 1.5em;
-  margin-bottom: 15px;
-}
+
 .about-area p {
-  color: #999;
+  text-align: center;
+  padding-top: 6%;
+  font-size: .75em;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .about-area ul {
-  padding-left: 30px;
-  margin-bottom: 20px;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: .8em;
 }
-.about-area ul li {
-  color: #999;
-  list-style-image: none;
-  list-style-type: square;
-  margin-bottom: 5px;
+.about-area {
+  color: #CCC;
+}
+.about-area p a:hover {
+  color: #37c6f5;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /********************************* CONTACT PAGE **********************************/
+
 .contact-area {
   background-color: #fff;
   display: inline;
@@ -405,7 +511,9 @@ h2 {
 }
 
 /******************************* MEDIA QUERIES ************************************/
-@media (min-width: 400px; max-width: 500px) {
+
+@media (min-width: 400px;
+max-width: 500px) {
   #header #nav-icon {
     color: #000;
     float: right;
@@ -414,7 +522,8 @@ h2 {
     padding-top: 4%;
   }
 }
-@media (min-width: 500px; max-width: 600px) {
+@media (min-width: 500px;
+max-width: 600px) {
   video {
     width: 75%;
     height: 50vh;
@@ -435,8 +544,8 @@ h2 {
     padding-top: 4%;
   }
 }
-
-@media (min-width: 600px; max-width: 700px) {
+@media (min-width: 600px;
+max-width: 700px) {
   #header #nav-icon {
     color: #000;
     float: right;
@@ -445,7 +554,6 @@ h2 {
     padding-top: 2%;
   }
 }
-
 @media (max-width: 800px) {
   video {
     width: 75%;
@@ -461,7 +569,6 @@ h2 {
     padding-right: 1%;
   }
 }
-
 @media (max-width: 1000px) {
   video {
     width: 70%;
