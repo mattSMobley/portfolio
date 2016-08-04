@@ -635,7 +635,7 @@ h2 {
   }
 
 }
-@media (min-width: 801px) and (max-width: 1000px){
+@media (min-width: 801px) and (max-width: 1070px){
   video {
     width: 75%;
     height: 60vh;
@@ -651,7 +651,26 @@ h2 {
   }
 
 }
-@media (min-width: 1001px) {
+
+@media (min-width: 1071px) and (max-width: 1200px) {
+  video {
+    width: 75%;
+    height: 70vh;
+  }
+  .caption {
+    display: block;
+  }
+  .aboutAppHead {
+    font-size: 1.5em;
+  }
+  .caption2 {
+    display: none;
+  }
+  header {
+    padding-bottom: 5%;
+  }
+}
+@media (min-width: 1201px) {
   video {
     width: 75%;
     height: 70vh;
