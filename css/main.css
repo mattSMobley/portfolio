@@ -150,8 +150,8 @@ body {
   font-weight: 300;
   padding-left: 1%;
   padding-right: 1%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   background-color: rgba(255, 255, 255, 0.5);
   border: 2px solid white;
   display: none;
@@ -631,7 +631,7 @@ h2 {
     display: none;
   }
   header {
-    padding-bottom: 10%;
+    padding-bottom: 15%;
   }
 
 }
@@ -648,6 +648,9 @@ h2 {
   }
   .aboutApp {
     display: none;
+  }
+  header {
+    padding-bottom: 10%;
   }
 
 }
