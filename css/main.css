@@ -4,7 +4,8 @@
 /******************************* PAGE SECTIONS ************************************/
 
 .videoPadding {
-  padding: 0% 10%;
+  padding-left: 12%;
+  padding-right: 12%;
 }
 #first {
   width: 100%;
@@ -60,23 +61,41 @@
   overflow-y: scroll;
 }
 
-/*.regularBack:after {
-    content: "";
-    display: block;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    background: rgba(0,0,0,.7);
-    -moz-transition: all 2s;
-    -webkit-transition: all 2s;
-    transition: all 2s;
-    top: 0;
-    left: 0;
-    position: absolute;
+/* animate to these setting */
+.vidWrap {
+  position: relative;
+  display: inline-flex;
 }
-.regularBack:hover:after {
-    opacity: 1;
-}*/
+.fleft {
+  float: left;
+
+}
+.exit {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 4%;
+}
+.aboutApp {
+  width: 0%;
+  height: auto;
+  font-size: 0em;
+  background: rgba(0, 0, 0, 0.3);
+  overflow-y: scroll;
+}
+
+.aboutAppHead {
+  color: white;
+}
+.fright {
+  float: right;
+}
+.videoPadding2 {
+  padding: 1%;
+}
+.aboutButton {
+  cursor: pointer;
+}
 
 .regularBack p, ul {
   color: #DDD;
@@ -123,6 +142,23 @@ body {
   font-weight: 700;
   padding-left: 1%;
   padding-right: 1%;
+  padding-top: 1%;
+}
+.caption2 {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 300;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid white;
+  display: none;
+}
+
+.fa {
+  font-size: .8em;
 }
 .caption a:hover {
   color: #37c6f5;
@@ -201,6 +237,28 @@ h2 {
   animation-name: fadeInDown;
 }
 
+/*@-webkit-keyframes grow {
+  0%   { opacity: 0; width: 0%; }
+  100% { opacity: 1; width: 100%; }
+}
+@-moz-keyframes grow {
+  0%   { opacity: 0; width: 0%; }
+  100% { opacity: 1; width: 100%; }
+}
+@-o-keyframes grow {
+  0%   { opacity: 0; width: 0%; }
+  100% { opacity: 1; width: 100%; }
+}
+@keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+.grow {
+  -webkit-animation: grow 3s infinite;
+  -moz-animation: grow 3s infinite;
+  -o-animation: grow 3s infinite;
+  animation: grow;
+}*/
 
 .animated2 {
   -webkit-animation-duration: 2.5s;
@@ -512,30 +570,40 @@ h2 {
 
 /******************************* MEDIA QUERIES ************************************/
 
-@media (min-width: 400px;
-max-width: 500px) {
+@media (min-width: 400px) and (max-width: 500px) {
   #header #nav-icon {
     color: #000;
     float: right;
     font-size: 30px;
     padding-right: 5%;
     padding-top: 4%;
+  }
+  header {
+    padding-bottom: 30%;
+  }
+  .caption {
+    display: none;
+  }
+  .caption2 {
+    display: block;
+  }
+  .aboutApp {
+    display: none;
   }
 
 }
-@media (min-width: 500px;
-max-width: 600px) {
-  video {
-    width: 75%;
-    height: 50vh;
+@media (min-width: 501px) and (max-width: 600px) {
+  header {
+    padding-bottom: 20%;
   }
   .caption {
-    color: black;
-    font-size: 20px;
-    font-weight: 700;
-    padding-top: 5%;
-    padding-left: 1%;
-    padding-right: 1%;
+    display: none;
+  }
+  .caption2 {
+    display: block;
+  }
+  .aboutApp {
+    display: none;
   }
   #header #nav-icon {
     color: #000;
@@ -545,8 +613,7 @@ max-width: 600px) {
     padding-top: 4%;
   }
 }
-@media (min-width: 600px;
-max-width: 700px) {
+@media (min-width: 601px) and (max-width: 800px) {
   #header #nav-icon {
     color: #000;
     float: right;
@@ -554,33 +621,48 @@ max-width: 700px) {
     padding-right: 5%;
     padding-top: 2%;
   }
+  .caption {
+    display: none;
+  }
+  .caption2 {
+    display: block;
+  }
+  .aboutApp {
+    display: none;
+  }
+  header {
+    padding-bottom: 10%;
+  }
+
 }
-@media (max-width: 800px) {
+@media (min-width: 801px) and (max-width: 1000px){
   video {
     width: 75%;
     height: 60vh;
-    padding-top: 5%;
   }
   .caption {
-    color: black;
-    font-size: 20px;
-    font-weight: 700;
-    padding-top: 5%;
-    padding-left: 1%;
-    padding-right: 1%;
+    display: none;
   }
+  .caption2 {
+    display: block;
+  }
+  .aboutApp {
+    display: none;
+  }
+
 }
-@media (max-width: 1000px) {
+@media (min-width: 1001px) {
   video {
-    width: 70%;
-    height: 65vh;
+    width: 75%;
+    height: 70vh;
   }
   .caption {
-    color: black;
-    font-size: 20px;
-    font-weight: 700;
-    padding-top: 5%;
-    padding-left: 1%;
-    padding-right: 1%;
+    display: block;
+  }
+  .aboutAppHead {
+    font-size: 1.5em;
+  }
+  .caption2 {
+    display: none;
   }
 }
