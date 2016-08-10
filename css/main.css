@@ -144,6 +144,7 @@ body {
   padding: 1%;
   background-color: rgba(255, 255, 255, 0.6);
   border: 2px solid white;
+  width: 60%;
 }
 .caption2 {
   color: black;
@@ -580,7 +581,7 @@ h2 {
     padding-top: 4%;
   }
   header {
-    padding-bottom: 30%;
+    padding-bottom: 25%;
   }
   .caption {
     display: none;
@@ -591,6 +592,12 @@ h2 {
   .aboutApp {
     display: none;
   }
+  #main-content .main-content-area .slogan {
+    font-size: 1.2em;
+  }
+  /*#main-content .main-content-area h2 {
+    font-size: 2em;
+  }*/
 
 }
 @media (min-width: 501px) and (max-width: 600px) {
