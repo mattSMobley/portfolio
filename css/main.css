@@ -106,6 +106,7 @@ header {
   padding-top: 1%;
   padding-bottom: 2%;
 }
+
 #header .topLeft {
   color: #ccc;
   float: left;
@@ -141,7 +142,7 @@ body {
   font-size: 1.5em;
   font-weight: 700;
   padding: 1%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
   border: 2px solid white;
 }
 .caption2 {
@@ -152,7 +153,7 @@ body {
   padding-right: 1%;
   padding-top: 1%;
   padding-bottom: 1%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
   border: 2px solid white;
   display: none;
 }
@@ -570,7 +571,7 @@ h2 {
 
 /******************************* MEDIA QUERIES ************************************/
 
-@media (min-width: 300px) and (max-width: 500px) {
+@media (max-width: 500px) {
   #header #nav-icon {
     color: #000;
     float: right;
