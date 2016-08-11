@@ -588,6 +588,7 @@ h2 {
   }
   .caption2 {
     display: block;
+    font-size: 1em;
   }
   .aboutApp {
     display: none;
@@ -597,6 +598,9 @@ h2 {
   }
   #main-content .main-content-area .slogan {
     font-size: 1.2em;
+  }
+  .fright {
+    display: block;
   }
   /*#main-content .main-content-area h2 {
     font-size: 2em;
