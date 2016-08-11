@@ -572,7 +572,7 @@ h2 {
 
 /******************************* MEDIA QUERIES ************************************/
 
-@media (min-width: 200px) and (max-width: 500px) {
+/*@media (min-width: 200px) and (max-width: 500px) {
   #header #nav-icon {
     color: #000;
     float: right;
@@ -604,8 +604,8 @@ h2 {
   /*#main-content .main-content-area h2 {
     font-size: 2em;
   }*/
+}*/
 
-}
 @media (min-width: 501px) and (max-width: 600px) {
   header {
     padding-bottom: 20%;
