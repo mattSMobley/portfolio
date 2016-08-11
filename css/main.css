@@ -572,7 +572,7 @@ h2 {
 
 /******************************* MEDIA QUERIES ************************************/
 
-@media (max-width: 500px) {
+@media (min-width: 200px) and (max-width: 500px) {
   #header #nav-icon {
     color: #000;
     float: right;
