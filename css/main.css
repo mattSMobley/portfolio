@@ -592,7 +592,7 @@ h2 {
   .aboutApp {
     display: none;
   }
-  .videoPadding {
+  .vidWrap {
     display: block;
   }
   #main-content .main-content-area .slogan {
