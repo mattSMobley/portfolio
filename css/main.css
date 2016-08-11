@@ -581,21 +581,20 @@ h2 {
     padding-top: 4%;
   }
   header {
-    padding-bottom: 25%;
+    padding-bottom: 20%;
   }
   .caption {
     display: none;
   }
   .caption2 {
     display: block;
-    font-size: 1em;
   }
   .aboutApp {
     display: none;
   }
-  .vidWrap {
+  /*.vidWrap {
     display: block;
-  }
+  }*/
   #main-content .main-content-area .slogan {
     font-size: 1.2em;
   }
