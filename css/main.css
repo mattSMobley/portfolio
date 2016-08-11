@@ -592,6 +592,9 @@ h2 {
   .aboutApp {
     display: none;
   }
+  .videoPadding {
+    display: block;
+  }
   #main-content .main-content-area .slogan {
     font-size: 1.2em;
   }
