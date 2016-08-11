@@ -592,9 +592,9 @@ h2 {
   .aboutApp {
     display: none;
   }
-  /*.vidWrap {
-    display: block;
-  }*/
+  .vidWrap {
+    z-index: 9999;
+    }
   #main-content .main-content-area .slogan {
     font-size: 1.2em;
   }
