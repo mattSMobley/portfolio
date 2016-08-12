@@ -7,6 +7,9 @@ video {
   height: auto;
   border: 8px solid rgba(255, 255, 255, 0.7);
 }
+header p {
+  color: #DDD;
+}
 .videoPadding {
   padding-left: 12%;
   padding-right: 12%;
