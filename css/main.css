@@ -5,7 +5,7 @@
 video {
   width: 100%;
   height: auto;
-  border: 5px solid #DDD;
+  border: 8px solid rgba(255, 255, 255, 0.7);
 }
 .videoPadding {
   padding-left: 12%;
@@ -491,9 +491,10 @@ h2 {
   padding-right: 5%;
 }
 .about-area ul {
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
   font-size: .8em;
+  text-align: justify;
 }
 .about-area {
   color: #CCC;
@@ -584,7 +585,7 @@ h2 {
     padding-top: 4%;
   }
   video {
-    width: 95%;
+    width: 100%;
     height: auto;
   }
   header {
@@ -596,7 +597,6 @@ h2 {
   .caption2 {
     display: block;
     margin-top: 15%;
-
   }
   .aboutApp {
     display: none;
@@ -609,6 +609,15 @@ h2 {
   }
   .fright {
     display: block;
+  }
+  .about-area ul {
+    padding-left: 2%;
+    padding-right: 2%;
+    /*font-size: .8em;*/
+  }
+  .videoPadding {
+    padding-left: 5%;
+    padding-right: 5%;
   }
   /*#main-content .main-content-area h2 {
     font-size: 2em;
@@ -640,6 +649,11 @@ h2 {
     padding-right: 5%;
     padding-top: 4%;
   }
+  .about-area ul {
+    padding-left: 5%;
+    padding-right: 5%;
+    /*font-size: .8em;*/
+  }
 }
 @media (min-width: 601px) and (max-width: 800px) {
   #header #nav-icon {
@@ -666,6 +680,7 @@ h2 {
     padding-bottom: 15%;
   }
 
+
 }
 @media (min-width: 801px) and (max-width: 1070px){
   video {
@@ -684,6 +699,11 @@ h2 {
   header {
     padding-bottom: 10%;
   }
+  .about-area ul {
+    padding-left: 5%;
+    padding-right: 5%;
+    /*font-size: .8em;*/
+  }
 
 }
 
@@ -700,6 +720,11 @@ h2 {
   }
   header {
     padding-bottom: 5%;
+  }
+  .about-area ul {
+    padding-left: 5%;
+    padding-right: 5%;
+    /*font-size: .8em;*/
   }
 }
 @media (min-width: 1201px) {
