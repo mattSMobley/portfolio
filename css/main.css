@@ -2,7 +2,11 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
 
 /******************************* PAGE SECTIONS ************************************/
-
+video {
+  width: 100%;
+  height: auto;
+  border: 5px solid #DDD;
+}
 .videoPadding {
   padding-left: 12%;
   padding-right: 12%;
@@ -67,7 +71,6 @@
 }
 .fleft {
   float: left;
-
 }
 .exit {
   cursor: pointer;
@@ -89,9 +92,9 @@
 .fright {
   float: right;
 }
-.videoPadding2 {
+/*.videoPadding2 {
   padding: 1%;
-}
+}*/
 .aboutButton {
   cursor: pointer;
 }
@@ -685,11 +688,7 @@ h2 {
 }
 
 @media (min-width: 1071px) and (max-width: 1200px) {
-  video {
-    width: 100%;
-    height: auto;
-    border: 10px solid #DDD;
-  }
+
   .caption {
     display: block;
   }

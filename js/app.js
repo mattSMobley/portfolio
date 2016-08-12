@@ -5,7 +5,8 @@ $( ".aboutButton" ).click(function() {
     opacity: 1,
     fontSize: "120%",
     paddingTop: "5%",
-    marginLeft: "1%"
+    marginLeft: "1%",
+    marginBottom: ".4%"
   }, 1000 );
 });
 
