@@ -5,6 +5,8 @@ $( ".aboutButton" ).click(function() {
     opacity: 1,
     fontSize: "120%",
     paddingTop: "5%",
+    paddingLeft: "1%",
+    paddingRight: "1%",
     marginLeft: "1%",
     marginBottom: ".4%"
   }, 1000 );
@@ -21,8 +23,8 @@ $( ".exit" ).click(function(){
   $( ".aboutApp" ).animate({
     width: "0%",
     opacity: 0,
-    paddingLeft: "1%",
-    paddingRight: "1%",
+    paddingLeft: "0%",
+    paddingRight: "0%",
     fontSize: "0em"
   }, 1000 );
 });
