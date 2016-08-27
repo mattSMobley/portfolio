@@ -21,6 +21,8 @@ $( ".exit" ).click(function(){
   $( ".aboutApp" ).animate({
     width: "0%",
     opacity: 0,
+    paddingLeft: "1%",
+    paddingRight: "1%",
     fontSize: "0em"
   }, 1000 );
 });
