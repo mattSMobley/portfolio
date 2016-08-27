@@ -27,7 +27,7 @@ $( ".exit" ).click(function(){
 
 $(".exit").click(function() {
   $('.videoPadding').animate({
-    paddingLeft: "10%",
-    paddingRight: "10%"
+    paddingLeft: "14%",
+    paddingRight: "14%"
   }, 1000);
 });
