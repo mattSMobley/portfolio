@@ -165,6 +165,24 @@ body {
   display: none;
 }
 
+.not-active {
+   pointer-events: none;
+   cursor: default;
+   text-decoration: line-through;
+}
+.hovertext {
+  font-size: 1em;
+  /*font-family: sans-serif;*/
+  width: 2em;
+  color: black;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px solid white;
+  display: none;
+  /*text-transform: uppercase;*/
+  /*margin-top: -100px;*/
+}
+
 .fa {
   font-size: .8em;
 }
